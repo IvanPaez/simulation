@@ -1,0 +1,1 @@
+-g -Wall   -fno-stack-protector  -DHAVE_PCAP -DXMLPARSER=libxml -DWITH_PARSIM -DWITH_NETBUILDER  -I. -Iresults -I/Users/ipaezana/Documents/tools/OMNet++/omnetpp-4.3.1/include

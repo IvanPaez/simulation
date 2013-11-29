@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scave:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:scave="http://www.omnetpp.org/omnetpp/scave">
+  <inputs>
+    <inputs name="/myproject/results/*.sca"/>
+  </inputs>
+  <datasets>
+    <datasets name="Node Life Time">
+      <items xsi:type="scave:Add" filterPattern="module(Mynetwork.node1) AND name(&quot;Node Life Time&quot;)"/>
+      <items xsi:type="scave:Add" filterPattern="module(Mynetwork.node) AND name(&quot;Node Life Time&quot;)"/>
+      <items xsi:type="scave:Add" filterPattern="module(Mynetwork.node2) AND name(&quot;Node Life Time&quot;)"/>
+      <items xsi:type="scave:Add" filterPattern="module(Mynetwork.node3) AND name(&quot;Node Life Time&quot;)"/>
+      <items xsi:type="scave:Add" filterPattern="module(Mynetwork.node4) AND name(&quot;Node Life Time&quot;)"/>
+      <items xsi:type="scave:Add" filterPattern="module(Mynetwork.node1) AND name(&quot;Node Life Time&quot;)"/>
+      <items xsi:type="scave:Add" filterPattern="module(Mynetwork.node) AND name(&quot;Node Life Time&quot;)"/>
+      <items xsi:type="scave:Add" filterPattern="module(Mynetwork.node2) AND name(&quot;Node Life Time&quot;)"/>
+      <items xsi:type="scave:Add" filterPattern="module(Mynetwork.node3) AND name(&quot;Node Life Time&quot;)"/>
+      <items xsi:type="scave:Add" filterPattern="module(Mynetwork.node4) AND name(&quot;Node Life Time&quot;)"/>
+      <items xsi:type="scave:Add" filterPattern="module(Mynetwork.node1) AND name(&quot;Node Life Time&quot;)"/>
+      <items xsi:type="scave:Add" filterPattern="module(Mynetwork.node) AND name(&quot;Node Life Time&quot;)"/>
+      <items xsi:type="scave:Add" filterPattern="module(Mynetwork.node2) AND name(&quot;Node Life Time&quot;)"/>
+      <items xsi:type="scave:Add" filterPattern="module(Mynetwork.node3) AND name(&quot;Node Life Time&quot;)"/>
+      <items xsi:type="scave:Add" filterPattern="module(Mynetwork.node4) AND name(&quot;Node Life Time&quot;)"/>
+      <items xsi:type="scave:BarChart" name="Node Life Time">
+        <properties name="Plot.BackgroundColor" value="white"/>
+        <properties name="Graph.Title" value="Node Life Time"/>
+        <properties name="Axes.Grid" value="All"/>
+        <properties name="Legend.Display" value="true"/>
+        <properties name="Legend.Border" value="true"/>
+        <properties name="Bar.Placement" value="Stacked"/>
+      </items>
+    </datasets>
+  </datasets>
+  <chartSheets/>
+</scave:Analysis>

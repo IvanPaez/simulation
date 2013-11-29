@@ -1,0 +1,96 @@
+E # 0 t 0 m 1 ce -1 msg -1
+SB v 1027 rid General-0-20131128-17:01:14-3619 b 1000
+KF p -1 c "" s ""
+MC id 1 c cCompoundModule t myproject.Mynetwork n Mynetwork cm 1
+MS id 1 d bgb=526,445;bgi=background/terrain
+MC id 2 c Node t myproject.Node pid 1 n node1
+MS id 2 d p=39,50;i=abstract/accesspoint
+MC id 3 c Node t myproject.Node pid 1 n node
+MS id 3 d p=167,28;i=abstract/accesspoint
+MC id 4 c Node t myproject.Node pid 1 n node2
+MS id 4 d p=122,127;i=abstract/accesspoint
+MC id 5 c Node t myproject.Node pid 1 n node3
+MS id 5 d p=225,127;i=abstract/accesspoint
+MC id 6 c Node t myproject.Node pid 1 n node4
+MS id 6 d p=310,28;i=abstract/accesspoint
+MC id 7 c DataCollector t myproject.DataCollector pid 1 n dataCollector
+MS id 7 d p=410,208;i=block/routing,gold
+MC id 8 c SensorNode t myproject.SensorNode pid 1 n sensorNode
+MS id 8 d p=196,236;i=abstract/accesspoint,#00FF02
+MC id 9 c SensorNode t myproject.SensorNode pid 1 n sensorNode1
+MS id 9 d p=55,179;i=abstract/accesspoint,#00FF02
+GC m 2 g 2621440 n out i 0 o 1
+GC m 4 g 1048576 n in i 0 o 0
+CC sm 2 sg 2621440 dm 4 dg 1048576
+GC m 4 g 2621440 n out i 0 o 1
+GC m 2 g 1048576 n in i 0 o 0
+CC sm 4 sg 2621440 dm 2 dg 1048576
+GC m 3 g 2621440 n out i 0 o 1
+GC m 5 g 1048576 n in i 0 o 0
+CC sm 3 sg 2621440 dm 5 dg 1048576
+GC m 5 g 2621440 n out i 0 o 1
+GC m 6 g 1048576 n in i 0 o 0
+CC sm 5 sg 2621440 dm 6 dg 1048576
+GC m 6 g 2621440 n out i 0 o 1
+GC m 5 g 1048577 n in i 1 o 0
+CC sm 6 sg 2621440 dm 5 dg 1048577
+GC m 3 g 2621441 n out i 1 o 1
+GC m 4 g 1048577 n in i 1 o 0
+CC sm 3 sg 2621441 dm 4 dg 1048577
+GC m 4 g 2621441 n out i 1 o 1
+GC m 3 g 1048576 n in i 0 o 0
+CC sm 4 sg 2621441 dm 3 dg 1048576
+GC m 5 g 2621441 n out i 1 o 1
+GC m 3 g 1048577 n in i 1 o 0
+CC sm 5 sg 2621441 dm 3 dg 1048577
+GC m 2 g 2621441 n out i 1 o 1
+GC m 3 g 1048578 n in i 2 o 0
+CC sm 2 sg 2621441 dm 3 dg 1048578
+GC m 3 g 2621442 n out i 2 o 1
+GC m 2 g 1048577 n in i 1 o 0
+CC sm 3 sg 2621442 dm 2 dg 1048577
+GC m 6 g 2621441 n out i 1 o 1
+GC m 7 g 1048576 n in i 0 o 0
+CC sm 6 sg 2621441 dm 7 dg 1048576
+GC m 5 g 2621442 n out i 2 o 1
+GC m 7 g 1048577 n in i 1 o 0
+CC sm 5 sg 2621442 dm 7 dg 1048577
+GC m 9 g 2621440 n out i 0 o 1
+GC m 8 g 1048576 n in i 0 o 0
+CC sm 9 sg 2621440 dm 8 dg 1048576
+GC m 8 g 2621440 n out i 0 o 1
+GC m 7 g 1048578 n in i 2 o 0
+CC sm 8 sg 2621440 dm 7 dg 1048578
+GC m 8 g 2621441 n out i 1 o 1
+GC m 9 g 1048576 n in i 0 o 0
+CC sm 8 sg 2621441 dm 9 dg 1048576
+MB sm 1 tm 2 m initialize(0)
+CM id 12 tid 12 eid 12 etid 12 c cMessage n Interval pe -1
+BS id 12 tid 12 eid 12 etid 12 c cMessage n Interval pe 0
+ES t 0.1
+ME
+MB sm 1 tm 3 m initialize(0)
+CM id 13 tid 13 eid 13 etid 13 c cMessage n Interval pe -1
+BS id 13 tid 13 eid 13 etid 13 c cMessage n Interval pe 0
+ES t 0.1
+ME
+MB sm 1 tm 4 m initialize(0)
+CM id 14 tid 14 eid 14 etid 14 c cMessage n Interval pe -1
+BS id 14 tid 14 eid 14 etid 14 c cMessage n Interval pe 0
+ES t 0.1
+ME
+MB sm 1 tm 5 m initialize(0)
+CM id 15 tid 15 eid 15 etid 15 c cMessage n Interval pe -1
+BS id 15 tid 15 eid 15 etid 15 c cMessage n Interval pe 0
+ES t 0.1
+ME
+MB sm 1 tm 6 m initialize(0)
+CM id 16 tid 16 eid 16 etid 16 c cMessage n Interval pe -1
+BS id 16 tid 16 eid 16 etid 16 c cMessage n Interval pe 0
+ES t 0.1
+ME
+MB sm 1 tm 7 m initialize(0)
+ME
+MB sm 1 tm 8 m initialize(0)
+CM id 17 tid 17 eid 17 etid 17 c cMessage n Interval pe -1
+ME

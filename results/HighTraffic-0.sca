@@ -1,0 +1,22 @@
+version 2
+run HighTraffic-0-20131126-10:07:31-1143
+attr configname HighTraffic
+attr datetime 20131126-10:07:31
+attr experiment HighTraffic
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Mynetwork
+attr processid 1143
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Mynetwork.node1 	"Node Life Time" 	0.62
+scalar Mynetwork.node 	"Node Life Time" 	0.62
+scalar Mynetwork.node2 	"Node Life Time" 	0.62
+scalar Mynetwork.node3 	"Node Life Time" 	0.62
+scalar Mynetwork.node4 	"Node Life Time" 	0.62
