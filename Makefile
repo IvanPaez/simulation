@@ -1,12 +1,12 @@
 #
-# OMNeT++/OMNEST Makefile for myproject
+# OMNeT++/OMNEST Makefile for simulation
 #
 # This file was generated with the command:
-#  opp_makemake -f --deep -O out
+#  opp_makemake -f --deep -O out -L/omnet-workspace/MiXiM/out/$(CONFIGNAME)/src -lmixim -KMIXIM_PROJ=/omnet-workspace/MiXiM
 #
 
 # Name of target to be created (-o option)
-TARGET = myproject$(EXE_SUFFIX)
+TARGET = simulation$(EXE_SUFFIX)
 
 # User interface (uncomment one) (-u option)
 USERIF_LIBS = $(ALL_ENV_LIBS) # that is, $(TKENV_LIBS) $(CMDENV_LIBS)
@@ -20,7 +20,8 @@ INCLUDE_PATH = -I. -Iresults
 EXTRA_OBJS =
 
 # Additional libraries (-L, -l options)
-LIBS =
+LIBS = -L$(MIXIM_PROJ)/out/$(CONFIGNAME)/src  -lmixim
+LIBS += -Wl,-rpath,`abspath $(MIXIM_PROJ)/out/$(CONFIGNAME)/src`
 
 # Output directory
 PROJECT_OUTPUT_DIR = out
@@ -33,6 +34,9 @@ OBJS = $O/DataCollector.o $O/Node.o $O/Queue.o $O/SensorNode.o $O/myHeader_m.o
 # Message files
 MSGFILES = \
     myHeader.msg
+
+# Other makefile variables (-K)
+MIXIM_PROJ=/omnet-workspace/MiXiM
 
 #------------------------------------------------------------------------------
 
@@ -104,7 +108,7 @@ msgheaders: $(MSGFILES:.msg=_m.h)
 clean:
 	$(qecho) Cleaning...
 	$(Q)-rm -rf $O
-	$(Q)-rm -f myproject myproject.exe libmyproject.so libmyproject.a libmyproject.dll libmyproject.dylib
+	$(Q)-rm -f simulation simulation.exe libsimulation.so libsimulation.a libsimulation.dll libsimulation.dylib
 	$(Q)-rm -f ./*_m.cc ./*_m.h
 	$(Q)-rm -f results/*_m.cc results/*_m.h
 

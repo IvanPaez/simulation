@@ -13,9 +13,11 @@
 // along with this program.  If not, see http://www.gnu.org/licenses/.
 // 
 
-package myproject;
+package simulation;
 
-network Mynetwork
+import org.mixim.base.modules.BaseNetwork;
+
+network Network extends BaseNetwork
 {
     @display("bgb=526,445;bgi=background/terrain");
     submodules:

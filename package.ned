@@ -1,3 +1,1 @@
-package myproject;
-
-@license(LGPL);
+package simulation;
